@@ -23,8 +23,7 @@ FROM ${Enriched.sql()} ) SELECT * FROM result_set`
     measures: {
         PROPENSITY_SCORE: {
             sql: `PROPENSITY_SCORE`,
-            type: `number`,
-            drillMembers: [ZIP_CODE, FULL_ADDRESS]
+            type: `number`
         }
     },
 
