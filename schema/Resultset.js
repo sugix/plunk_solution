@@ -34,6 +34,11 @@ FROM ${Enriched.sql()} ) SELECT * FROM result_set`
             type: `string`
         },
 
+        FULL_ADDRESS: {
+            sql: `${CUBE}.\`FULL_ADDRESS\``,
+            type: `string`
+        },
+
         PROPENSITY_SCORE_RANK: {
             sql: `${CUBE}.\`PROPENSITY_SCORE_RANK\``,
             type: `number`,
